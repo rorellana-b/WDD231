@@ -7,6 +7,7 @@
 
 :root {
   --colorLine: #0cbff5;
+  --colorBlue: #09106d;
   --colorBlack: #000;
   --colorWhite: #fff;
 }
@@ -113,13 +114,15 @@ h2 {
 }
 
 #featured button {
-  background-image: url('/images/site/own_today.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 45%;
   height: 25%;
   margin: 5% 0;
+  background-color: var(--colorLine);
+  font-size: large;
+  box-shadow: #000 2px 2px 2px;
 }
 
 #featured p {
@@ -166,10 +169,9 @@ h2 {
 }
 
 #upgrades p {
-  color: var(--colorLine);
-  font-size: 1rem;
+  color: var(--colorBlack);
+  font-size: 1.05rem;
   text-align: center;
-  text-decoration: underline;
   margin: 4%;
 }
 
@@ -211,6 +213,7 @@ h2 {
   #featured button {
     width: 70%;
     height: 29px;
+    background-color: #0cbff5;
   }
 
   h2 {

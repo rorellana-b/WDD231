@@ -11,12 +11,97 @@
     <meta property="og:image" content="https://" />
     <meta property="og:url" content="https://" />
     <link rel="icon" href="../chamber/images/favicon-4.ico" type="image/x-icon">
-    <link rel="stylesheet" href="public/css/chamber.css">
+    <link rel="stylesheet" href="../chamber/css/base.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script defer src="../chamber/js/menu.js"></script>
     <title>Chamber Directory</title>
 </head>
 
 <body>
+    <header>
+        <div id="principal">
+            <div>
+                <img src="../chamber/images/logo.webp" alt="logo Chamber of C." id="logo">
+            </div>
+            <div id="text-header">
+                <h2>El Salvador</h2>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button type="button" id="menu"></button>
+        </div>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+    <div id="hero-container">
+        <img src="../chamber/images/hero_1200.webp" srcset="../chamber/images/hero_480.webp 480w, 
+        ../chamber/images/hero_800.webp 800w, 
+        ../chamber/images/hero_1200.webp 1200w" sizes="(max-width: 480px) 480px, 
+       (max-width: 800px) 800px, 
+       1200px" alt="hero Image" id="hero-img">
+        <button class="button">Keynote Tickets</button>
+    </div>
 
+    <main>
+        <h1>Home</h1>
+        <div class="grid-container">
+            <div class="container">
+                <h2>Events</h2>
+            </div>
+            <div class="container">
+                <h2>Current weather</h2>
+                <div id="weather">
+                    <img id="weather-img" src="../chamber/images/clear-sky.png" alt="clear-sky">
+                    <div>
+                        <p><span>75&deg;</span>F</p>
+                        <p>Party Cloudy</p>
+                        <p>High: 85&deg;</p>
+                        <p>Low: 52&deg;</p>
+                        <p>Humidity: 34%</p>
+                        <p>Sunrise: 7:30am</p>
+                        <p>Sunset: 9:59pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="forecast">
+                <h2>Wheather Forecast</h2>
+                <h3>Today: <span>90&deg;</span>F</h3>
+                <h3>Wednesdat: <span>89&deg;</span>F</h3>
+                <h3>Thurday: <span>68&deg;</span>F</h3>
+            </div>
+        </div>
+        <div class="toggle-view">
+            <input type="checkbox" id="viewSwitch">
+            <label for="viewSwitch">Card and list View</label>
+        </div>
+        <div id="business-container">
+
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>El Salvador Chamber of Commerce</p>
+            <p>Chalatenango</p>
+            <p>San Antonio Street 101</p>
+            <p>info@chamberes.com.sv</p>
+            <p>(503) 2300-4000</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Ronal Orellana</p>
+            <p id="currentyear"></p>
+            <p id="lastModified">mmm</p>
+        </div>
+    </footer>
+    <script defer src="../chamber/js/business.js"></script>
 </body>
 
 </html>

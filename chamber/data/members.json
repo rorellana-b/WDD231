@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Grupo Calleja",
+        "address": "Calle El Pedregal y Avenida Olímpica, San Salvador, El Salvador",
+        "phone": "+503 2209 0800",
+        "website": "https://www.superselectos.com",
+        "iconFile": "../chamber/images/selectos.webp",
+        "membershipLevel": 3,
+        "otherInfo": {
+            "industry": "Retail",
+            "description": "Operates the largest supermarket chain in El Salvador, Super Selectos."
+        }
+    },
+    {
+        "name": "ALBA Petróleos",
+        "address": "Calle Loma Linda #124, San Salvador, El Salvador",
+        "phone": "+503 2527 3300",
+        "website": "http://www.albapetroleos.com",
+        "iconFile": "../chamber/images/alba.webp",
+        "membershipLevel": 2,
+        "otherInfo": {
+            "industry": "Energy",
+            "description": "Supplies fuel and petroleum-based products across the country."
+        }
+    },
+    {
+        "name": "Tigo El Salvador",
+        "address": "Boulevard del Hipódromo #212, Colonia San Benito, San Salvador, El Salvador",
+        "phone": "+503 2508 0000",
+        "website": "https://www.tigo.com.sv",
+        "iconFile": "../chamber/images/tigo.webp",
+        "membershipLevel": 3,
+        "otherInfo": {
+            "industry": "Telecommunications",
+            "description": "Offers mobile, internet, and cable TV services."
+        }
+    },
+    {
+        "name": "Banco Agrícola",
+        "address": "Av. Olímpica y 67ª Avenida Sur, San Salvador, El Salvador",
+        "phone": "+503 2210 0000",
+        "website": "https://www.bancoagricola.com",
+        "iconFile": "../chamber/images/agricola.webp",
+        "membershipLevel": 1,
+        "otherInfo": {
+            "industry": "Banking",
+            "description": "One of the largest banks in El Salvador."
+        }
+    },
+    {
+        "name": "La Constancia",
+        "address": "Kilómetro 12.5, Carretera a Comalapa, San Salvador, El Salvador",
+        "phone": "+503 2239 0300",
+        "website": "https://www.laconstancia.com",
+        "iconFile": "../chamber/images/la-constancia.webp",
+        "membershipLevel": 2,
+        "otherInfo": {
+            "industry": "Beverage",
+            "description": "Produces and distributes beverages, including beer."
+        }
+    },
+    {
+        "name": "Industrias La Cabaña",
+        "address": "Km. 5 1/2 Carretera a Santa Ana, San Salvador, El Salvador",
+        "phone": "+503 2205 9700",
+        "website": "https://www.lacabana.com.sv",
+        "iconFile": "../chamber/images/la-cabana.webp",
+        "membershipLevel": 2,
+        "otherInfo": {
+            "industry": "Food",
+            "description": "Produces dairy and other food products."
+        }
+    },
+    {
+        "name": "Simán",
+        "address": "Centro Comercial Multiplaza, Antiguo Cuscatlán, El Salvador",
+        "phone": "+503 2240 9595",
+        "website": "https://www.siman.com",
+        "iconFile": "../chamber/images/siman.webp",
+        "membershipLevel": 3,
+        "otherInfo": {
+            "industry": "Retail",
+            "description": "A major department store chain in El Salvador and Central America."
+        }
+    }
+]

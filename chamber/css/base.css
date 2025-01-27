@@ -328,6 +328,10 @@ footer p {
         margin: 0%;
     }
 
+    #hero-img {
+        height: 80%;
+    }
+
     #menu {
         display: none;
     }

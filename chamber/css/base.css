@@ -8,6 +8,8 @@
     --color-white: #FFFFFF;
 
     --font-family-primary: 'Montserrat', Arial, sans-serif;
+
+    --fa-rotate-angle: 0deg;
 }
 
 /* Togle view*/
@@ -30,7 +32,7 @@
     appearance: none;
     width: 40px;
     height: 20px;
-    background: var(--color-white);
+    background: var(--color-primary);
     border-radius: 10px;
     position: relative;
     outline: none;
@@ -57,8 +59,6 @@
 .toggle-view input:checked::before {
     transform: translateX(20px);
 }
-
-
 
 body {
     font-family: var(--font-family-primary);
@@ -212,7 +212,7 @@ header {
 
 .container span {
     font-weight: bolder;
-    font-size: large;
+    font-size: 1rem;
 }
 
 .container h2 {
@@ -229,14 +229,6 @@ header {
 }
 
 #business-container.list img {
-    display: none;
-}
-
-#business-container.list a {
-    display: none;
-}
-
-#business-container.list p {
     display: none;
 }
 
@@ -281,12 +273,6 @@ header {
     margin: 5px;
 }
 
-.information {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
 #weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -302,17 +288,49 @@ h3 {
     font-family: var(--font-family-primary);
 }
 
-#forecast span {
-    font-size: x-large;
-    font-family: var(--font-family-primary);
+.forecast-day {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+.forecast-day p,
+.forecast-day h3 {
+    padding: 1%;
+    margin: 1%;
+}
+
+.forecast-day img {
+    padding: 0%;
+    margin: 0%;
+    width: 40px;
+
 }
 
 footer {
-    margin: 5%;
+    margin: 10%;
 }
 
 footer p {
     margin: 0%;
+}
+
+/* #business-container {
+    background-color: #FF6F00;
+} */
+.business-spotlight {
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #424242;
+}
+
+.business-spotlight img {
+    width: 90%;
+
 }
 
 /* large size*/
@@ -329,7 +347,7 @@ footer p {
     }
 
     #hero-img {
-        height: 80%;
+        height: 400px;
     }
 
     #menu {
@@ -352,9 +370,15 @@ footer p {
         font-size: larger;
     }
 
+    .place {
+        border-bottom: solid 2px var(--color-secondary);
+        border-radius: 5px;
+    }
+
     .navigation a:hover {
         color: var(--color-primary);
-        background: var(--color-secondary);
+        border-bottom: solid 2px var(--color-secondary);
+        border-radius: 5px;
         transform: scale(1.2);
     }
 
@@ -384,12 +408,27 @@ footer p {
 
     }
 
+    #business-container.list .business-card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+    }
+
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .spotlight-container {
+        display: grid;
+        height: 120%;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
+    .spotlight-container img {
+        width: 200px;
+        height: 130px;
+    }
 }
 
 /*smallest*/

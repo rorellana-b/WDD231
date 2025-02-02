@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber Directory Page">
+    <meta name="description" content="Chamber of Commerce Page">
     <meta name="author" content="Ronal B. Orellana">
-    <meta property="og:title" content="Chamber Directory" />
+    <meta property="og:title" content="Chamber of Commerce SV" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://" />
     <meta property="og:url" content="https://" />
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script defer src="../chamber/js/menu.js"></script>
     <script defer src="../chamber/js/weather.js"></script>
-    <title>Chamber Directory</title>
+    <title>Chamber of Commerce SV</title>
 </head>
 
 <body>
@@ -31,22 +31,52 @@
             <button type="button" id="menu" aria-label="Open the main menu"></button>
         </div>
         <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="directory.html" class="place">Directory</a>
+            <a href="index.html" class="place">Home</a>
+            <a href="directory.html">Directory</a>
             <a href="#">Join</a>
             <a href="#">Discover</a>
         </nav>
     </header>
+    <div id="hero-container">
+        <img src="../chamber/images/hero_1200.webp" srcset="../chamber/images/hero_480.webp 480w, 
+        ../chamber/images/hero_800.webp 800w, 
+        ../chamber/images/hero_1200.webp 1200w" sizes="(max-width: 480px) 480px, 
+       (max-width: 800px) 800px, 
+       1200px" alt="image of the flag of El Salvador" id="hero-img">
+        <button class="button">Keynote Tickets</button>
+    </div>
 
     <main>
-        <h1>Directory</h1>
-        <div class="toggle-view">
-            <label for="viewSwitch">Cardview</label>
-            <input type="checkbox" id="viewSwitch">
-            <label for="viewSwitch">Listview</label>
-        </div>
-        <div id="business-container">
+        <h1>Home</h1>
+        <div class="grid-container">
+            <div class="container">
+                <h2>Events</h2>
+            </div>
+            <div class="container">
+                <h2>Current weather</h2>
+                <div id="weather">
+                    <img id="weather-img" src="" alt="">
+                    <div>
+                        <p><span id="current-temp"></span></p>
+                        <p id="description-temp"></p>
+                        <p>Max: <span id="high-temp"></span></p>
+                        <p>Min: <span id="low-temp"></span></p>
+                        <p>Humidity: <span id="humidity-temp"></span></p>
+                        <p>Sunrise: <span id="sunrise-temp"></span></p>
+                        <p>Sunset: <span id="sunset-temp"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="forecast">
 
+            </div>
+        </div>
+
+        <div id="business-container">
+            <!-- Carrusel de empresas -->
+            <div class="carousel-container" id="carousel">
+                <!-- Los elementos del carrusel se agregarán aquí mediante JavaScript -->
+            </div>
         </div>
     </main>
     <footer>
@@ -69,7 +99,7 @@
             <p id="lastModified">mmm</p>
         </div>
     </footer>
-    <script defer src="../chamber/js/business.js"></script>
+    <script defer src="../chamber/js/carruzel.js"></script>
 </body>
 
 </html>

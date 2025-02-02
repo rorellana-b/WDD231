@@ -11,9 +11,6 @@ function createBusinessCard(business) {
     logo.src = business.iconFile;
     logo.alt = `${business.name} Logo`;
 
-    const info = document.createElement('div');
-    const aux = document.createElement('div');
-    aux.className = 'information'
 
     const name = document.createElement('h3');
     name.textContent = business.name;
@@ -30,16 +27,11 @@ function createBusinessCard(business) {
     link.textContent = `URL: ${business.website.replace(/^]https?:\/\//, '')}`;
     link.target = '_blank';
 
-    aux.appendChild(email);
-    aux.appendChild(phone);
-    aux.appendChild(link);
-
-    info.appendChild(logo);
-    info.appendChild(aux);
-
-
     card.appendChild(name);
-    card.appendChild(info);
+    card.appendChild(logo);
+    card.appendChild(email);
+    card.appendChild(phone);
+    card.appendChild(link);
 
     return card;
 }
@@ -52,6 +44,7 @@ viewSwitch.addEventListener('change', () => {
     // Toggle between "cards" and "list" classes
     gallery.classList.toggle('cards');
     gallery.classList.toggle('list');
+
 });
 
 fetch(jsonFile)
@@ -68,13 +61,3 @@ fetch(jsonFile)
     .catch(error => console.error('Error:', error));
 
 
-// dates
-const dates = document.querySelector("#currentyear");
-const last = document.querySelector("#lastModified");
-
-const today = new Date();
-
-
-dates.innerHTML = `&copy<span>${today.getFullYear()}</span> El Salvador Chamber of Commerce`;
-
-last.innerHTML = `Last Modification:${document.lastModified}`;

@@ -59,7 +59,7 @@ function displayResult(data) {
 
 
 
-// forecast for 3 dias
+// forecast for 3 days
 const forecastContainer = document.getElementById('forecast');
 
 const URL_FORECAST = `https://api.openweathermap.org/data/2.5/forecast?lat=${mylat}&lon=${mylog}&units=imperial&appid=${mykey}`;
@@ -85,7 +85,7 @@ function displayForecast(data) {
     let forecastHTML = '<h2>Weather Forecast</h2>';
     const dailyForecasts = {};
 
-    // using 3 dias en looking for register closest to the noon.
+    // using 3 days en looking for register closest to the noon.
     data.list.forEach(entry => {
         const date = new Date(entry.dt * 1000);
         const day = date.toLocaleDateString('es-SV', { weekday: 'long' });
@@ -100,7 +100,7 @@ function displayForecast(data) {
         }
     });
 
-    // take only 3 dias
+    // take only 3 days
     const forecastDays = Object.keys(dailyForecasts).slice(0, 3);
 
     forecastDays.forEach(day => {

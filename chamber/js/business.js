@@ -21,7 +21,7 @@ function createBusinessCard(business) {
     const email = document.createElement('p');
     email.textContent = `EMAIL: ${business.email}`
 
-    // Crear y agregar el enlace al sitio web
+    // clear and add busines
     const link = document.createElement('a');
     link.href = business.website;
     link.textContent = `URL: ${business.website.replace(/^]https?:\/\//, '')}`;

@@ -44,13 +44,13 @@
             <h2>Membership Application</h2>
             <fieldset>
                 <legend>Personal Information</legend>
-                <label>First Name: <input type="text" name="username" id="username" autocomplete="name"
+                <label>First Name: <input type="text" name="username" id="username" autocomplete="given-name"
                         required></label>
-                <label>Last Name: <input type="text" name="userlastname" id="userlastname" autocomplete="lastname"
+                <label>Last Name: <input type="text" name="userlastname" id="userlastname" autocomplete="family-name"
                         required></label>
                 <label>Organizational title: <input type="text" name="organization" id="organization"
                         autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required></label>
-                <label>Email: <input type="email" name="email" id="userEmail" autocomplete="example@example.com"
+                <label>Email: <input type="email" name="email" id="userEmail" autocomplete="email"
                         title="Please enter a valid email address" required></label>
                 <label>Phone: <input type="tel" name="phone" id="userPhone" title="Please enter a Phone number"
                         required></label>
@@ -59,7 +59,7 @@
                 <legend>Business Information</legend>
                 <label>Bussines name: <input type="text" name="businessName" id="businessName"
                         autocomplete="organization" required></label>
-                <label for="membership">Selecciona tu nivel de membresía:</label>
+                <label>Selecciona tu nivel de membresía:</label>
                 <label class="radio-label">
                     <input type="radio" name="membership" value="np" required>
                     <span>NP Membership (Sin costo)</span>
@@ -87,19 +87,19 @@
             <h2>Membership Level</h2>
             <div class="membership-level">
                 <h3>Non Profit Membership Level</h3>
-                <button id="bt_learn">Learn More</button>
+                <button class="bt_learn">Learn More</button>
             </div>
             <div class="membership-level">
                 <h3>Bronze Membership Level</h3>
-                <button id="bt_learn">Learn More</button>
+                <button class="bt_learn">Learn More</button>
             </div>
             <div class="membership-level">
                 <h3>Silver Membership Level</h3>
-                <button id="bt_learn">Learn More</button>
+                <button class="bt_learn">Learn More</button>
             </div>
             <div class="membership-level">
                 <h3>Gold Membership Level</h3>
-                <button id="bt_learn">Learn More</button>
+                <button class="bt_learn">Learn More</button>
             </div>
         </div>
     </main>

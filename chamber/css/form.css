@@ -93,7 +93,7 @@
     }
 }
 
-#bt_learn {
+.bt_learn {
     border: none;
     background: linear-gradient(var(--background-color), #091111ea);
     color: #fff;

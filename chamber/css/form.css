@@ -1,0 +1,134 @@
+:root {
+    --background-color: #073b4c;
+    --border-color: #ddd;
+    --border: #999;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #000;
+    font-size: 0.9rem;
+    margin: 1% 2% 1% 2%;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="password"],
+.wf1 input[type="email"],
+.wf1 input[type="tel"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px var(--border);
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background: linear-gradient(var(--background-color), #091111ea);
+    color: #fff;
+    border-radius: 6px;
+    padding: .6rem;
+    text-align: center;
+    width: 96%;
+    max-width: 400px;
+    margin: .9rem 2% .9rem 5%;
+    box-shadow: 1px 1px 4px var(--border);
+}
+
+.wf1 input:required {
+    border-left: solid 8px red;
+}
+
+.wf1 input:required:valid {
+    border-left: solid 8px green;
+}
+
+.membership-level {
+    background-color: #b6f3ee;
+    text-align: center;
+    margin: 4% 1%;
+    padding: 1%;
+    border-radius: 0 35px;
+    box-shadow: 1px 1px 4px var(--border);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: level-up 1.0s ease-out forwards;
+}
+
+.membership-level:nth-child(1) {
+    animation-delay: 0.10s;
+}
+
+.membership-level:nth-child(2) {
+    animation-delay: 0.20s;
+}
+
+.membership-level:nth-child(3) {
+    animation-delay: 0.30s;
+}
+
+.membership-level:nth-child(4) {
+    animation-delay: 0.40s;
+}
+
+@keyframes level-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scaleY(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0) scaleY(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
+    }
+}
+
+#bt_learn {
+    border: none;
+    background: linear-gradient(var(--background-color), #091111ea);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    text-align: center;
+    width: 96%;
+    max-width: 150px;
+    box-shadow: 1px 1px 4px var(--border);
+}
+
+.radio-label {
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    transform: scale(1.2);
+    margin: 0%;
+}
+
+
+/* large size*/
+@media screen and (min-width: 750px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .membership-level {
+        margin: 8% 5%;
+    }
+
+
+}

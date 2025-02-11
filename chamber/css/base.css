@@ -12,7 +12,6 @@
     --fa-rotate-angle: 0deg;
 }
 
-/* Togle view*/
 .toggle-view {
     display: flex;
     justify-content: flex-end;
@@ -331,7 +330,6 @@ footer p {
 
 }
 
-/* large size*/
 @media screen and (min-width: 750px) {
     main {
         display: flex;
@@ -429,7 +427,6 @@ footer p {
     }
 }
 
-/*smallest*/
 @media screen and (max-width:325px) {
     #text-header {
         display: none;

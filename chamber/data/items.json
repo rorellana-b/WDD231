@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "name": "National Theater of San Salvador",
+            "address": "Calle Delgado, San Salvador, El Salvador",
+            "description": "The National Theater of San Salvador is one of the oldest and most iconic buildings in the country, featuring French Renaissance-style architecture and a rich cultural offering.",
+            "image": "images/teatro.webp"
+        },
+        {
+            "name": "Metropolitan Cathedral of San Salvador",
+            "address": "6a Avenida Sur, San Salvador, El Salvador",
+            "description": "The Metropolitan Cathedral is a site of great historical and religious significance, where the remains of Monsignor Óscar Romero, a symbol of peace in El Salvador, rest.",
+            "image": "images/catedral.webp"
+        },
+        {
+            "name": "El Boquerón National Park",
+            "address": "San Salvador Volcano, El Salvador",
+            "description": "Located at the top of the San Salvador Volcano, El Boquerón National Park offers stunning views and natural trails, ideal for ecotourism.",
+            "image": "images/boqueron.webp"
+        },
+        {
+            "name": "Joya de Cerén Ruins",
+            "address": "San Juan Opico, La Libertad, El Salvador",
+            "description": "Known as the 'Pompeii of the Americas,' Joya de Cerén is a well-preserved Mayan archaeological site, declared a UNESCO World Heritage Site.",
+            "image": "images/joya_ceren.webp"
+        },
+        {
+            "name": "El Tunco Beach",
+            "address": "Tamanique, La Libertad, El Salvador",
+            "description": "One of El Salvador’s most famous surfing destinations, El Tunco is renowned for its breathtaking sunsets and vibrant nightlife.",
+            "image": "images/playa_tunco.webp"
+        },
+        {
+            "name": "National Museum of Anthropology (MUNA)",
+            "address": "Final Calle Circunvalación, San Salvador, El Salvador",
+            "description": "MUNA houses a vast collection of pre-Columbian artifacts and exhibits that narrate the history and culture of El Salvador.",
+            "image": "images/museo_muna.webp"
+        },
+        {
+            "name": "Route of the Flowers",
+            "address": "Sonsonate and Ahuachapán, El Salvador",
+            "description": "A tourist route through picturesque towns, coffee plantations, and food fairs, ideal for enjoying Salvadoran culture and nature.",
+            "image": "images/ruta_las_flores.webp"
+        },
+        {
+            "name": "Devil’s Gate",
+            "address": "Los Planes de Renderos, San Salvador, El Salvador",
+            "description": "A natural viewpoint with spectacular views and activities such as hiking and climbing, famous for its rock formations.",
+            "image": "images/puerta_del_diablo.webp"
+        }
+    ]
+}
